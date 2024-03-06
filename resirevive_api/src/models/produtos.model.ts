@@ -65,6 +65,36 @@ export class Produtos extends Entity {
   local: string;
 
   @property({
+    type: 'string',
+    required: true,
+  })
+  foto1: string;
+
+  @property({
+    type: 'string',
+    default: '',
+  })
+  foto2: string;
+
+  @property({
+    type: 'string',
+    default: '',
+  })
+  foto3: string;
+
+  @property({
+    type: 'string',
+    default: '',
+  })
+  foto4: string;
+
+  @property({
+    type: 'string',
+    default: '',
+  })
+  foto5: string;
+
+  @property({
     type: 'number',
   })
   id_dono?: number;
